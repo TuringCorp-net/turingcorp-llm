@@ -3,6 +3,7 @@
 Benchmark results and documentation for TuringCorp language models.
 
 👉 **API**: `https://api.turingcorp.net/v1` (OpenAI-compatible)
+📧 **Contact**: `iAsk@turingcorp.net`
 
 ---
 
