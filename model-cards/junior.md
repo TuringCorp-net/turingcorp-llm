@@ -31,9 +31,3 @@ Full results: [benchmarks/livebench.md](../benchmarks/livebench.md) · [benchmar
 - Language understanding and instruction following at or above frontier-model level
 - Strong reasoning relative to non-thinking models
 - Zero failures across all evaluated benchmarks
-
-## Observed Limitations
-
-- Data analysis tasks, particularly table-join operations
-- Mathematics below specialized reasoning models
-- Coding not yet evaluated
