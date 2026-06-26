@@ -3,6 +3,7 @@
 Benchmark results and documentation for TuringCorp language models.
 
 👉 **API**: `https://api.turingcorp.net/v1` (OpenAI-compatible) · Small-scale preview. [Apply for a license key →](docs/api.md#preview-license-key)
+📊 **Bench Score**: [api.turingcorp.net/benchmarks](https://api.turingcorp.net/benchmarks)
 📧 **Contact**: `iAsk@turingcorp.net`
 
 ---
