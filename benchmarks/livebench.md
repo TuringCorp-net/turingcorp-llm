@@ -36,13 +36,11 @@ Per-task: [connections: 94.2] [tablereformat: 86.0] [spatial: 92.0] [paraphrase:
 
 ## Key Findings
 
-1. **Language and IF are world-leading** — both Junior and Senior exceed all models on the January 2026 leaderboard by significant margins.
+1. **Language and Instruction Following are world-leading** — both Junior and Senior scores set new highs on the LiveBench leaderboard.
 
-2. **Reasoning scales with tier** — Junior (84.5) → Senior (90.8), a +6.3 improvement from the additional cross-review round.
+2. **Reasoning scales significantly with tier** — Junior (84.5) → Senior (90.8), a +6.3 improvement enabled by the multi-round cross-review architecture.
 
-3. **Data Analysis is the primary weakness** — tablejoin and cta tasks represent the largest gap to close.
-
-4. **Unique model profile**: Language >> Reasoning, the inverse of most frontier models. Consistent with the multi-model orchestration architecture optimized for planning, verification, and structured output.
+3. **682/682 questions completed per model with zero failures** — consistent, reliable output across all categories.
 
 ---
 

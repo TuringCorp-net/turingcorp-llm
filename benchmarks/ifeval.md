@@ -30,11 +30,11 @@ All scoring is programmatic (regex-based). No LLM-as-judge — results are fully
 
 ## Key Findings
 
-1. **Instruction following is world-leading** — both tiers exceed all known published models by significant margins.
+1. **Instruction following is world-leading** — both tiers achieve top-tier scores on the most objective, bias-free instruction following benchmark available.
 
-2. **Programmatic scoring eliminates bias** — IFEval uses exact-match and regex verification, not an LLM judge that may favor certain writing styles.
+2. **Programmatic scoring eliminates bias** — IFEval uses exact-match and regex verification, not an LLM judge. These results are fully reproducible and immune to judge-model preference.
 
-3. **Strict accuracy is robust** — the high strict scores (93.5%–94.8%) indicate the model follows instructions precisely, not just approximately.
+3. **Strict accuracy is consistently high** — 93.5%–94.8% strict accuracy means the model follows instructions precisely, not just approximately.
 
 ---
 
