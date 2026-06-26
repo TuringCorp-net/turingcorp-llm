@@ -53,6 +53,13 @@ Raw model outputs + full scores for independent verification:
 
 ---
 
+## Leaderboard Integration Status
+•	[x] LiveBench: Self-evaluation submitted. Pending official endpoint closed-loop verification.
+•	[ ] LMSYS Chatbot Arena: Application routed via Discord/Email. Pending routing pool allocation.
+•	[ ] Artificial Analysis: Test API Key provisioned. Pending speed/quality mapping.
+
+---
+
 ## Repository
 
 ```
