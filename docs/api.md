@@ -33,3 +33,17 @@ response = client.chat.completions.create(
 ```
 
 Any OpenAI SDK or compatible client works without modification.
+
+---
+
+## Preview License Key
+
+The API is currently in a small-scale preview phase. Access is by invitation only.
+
+To request a preview license key, email **iAsk@turingcorp.net** with:
+
+- **Name** — your name or organization
+- **Company** — your company or affiliation
+- **Use Case** — what you plan to test or evaluate
+
+We review requests promptly and will respond with a key and usage limits.
