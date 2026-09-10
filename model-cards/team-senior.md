@@ -13,18 +13,9 @@ Junior — independent reasoning paths cross-examined before delivery, answer de
 
 No current results are published for this tier yet.
 
-### Archived benchmarks (LiveBench 2026-01-08 · IFEval)
+### Archived benchmarks (IFEval)
 
 Measured in June 2026 and retained for traceability; no longer published on the website.
-
-| Category | Score | vs Junior |
-|------|:--:|:--:|
-| Language | **94.2** | +0.7 |
-| Instruction Following | **88.8** | +1.4 |
-| Reasoning | **90.8** | +6.3 |
-| Math | 80.4 | +4.9 |
-| Data Analysis | 65.8 | +4.3 |
-| **LiveBench overall** | **84.0** | +3.5 |
 
 | IFEval metric | Score | vs Junior |
 |------|:--:|:--:|
@@ -33,6 +24,4 @@ Measured in June 2026 and retained for traceability; no longer published on the 
 | prompt_level_strict | **92.6%** | +2.0 |
 | prompt_level_loose | **94.3%** | +1.7 |
 
-> See the aggregation caveat on the archive page:
-> [benchmarks/archive/livebench.md](../benchmarks/archive/livebench.md) ·
-> [benchmarks/archive/ifeval.md](../benchmarks/archive/ifeval.md)
+> Details: [benchmarks/archive/ifeval.md](../benchmarks/archive/ifeval.md)

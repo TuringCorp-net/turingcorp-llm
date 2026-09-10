@@ -92,9 +92,8 @@ judging pipeline.
 
 ### Archived benchmarks
 
-[LiveBench](benchmarks/archive/livebench.md) (2026-01-08) and [IFEval](benchmarks/archive/ifeval.md)
-were published in June 2026 and are retained for traceability. They are **no longer shown on the
-website**; see the archive pages for the aggregation caveat that applies to the LiveBench figures.
+[IFEval](benchmarks/archive/ifeval.md) was published in June 2026 and is retained for
+traceability. It is **no longer shown on the website**.
 
 ---
 
@@ -106,9 +105,8 @@ Raw model outputs for independent verification:
 |------|------|------|
 | [turingcorp-team-junior-v1.1_profbench-20260910.zip](result-package/turingcorp-team-junior-v1.1_profbench-20260910.zip) | ProfBench 2026-09-10 | Team answers (content + reason), per-criterion judge ratings, decision-kernel picks, position-swap audit |
 
-> Packages for the June 2026 LiveBench and IFEval runs were **withdrawn on 2026-09-11**, together
-> with the raw-data links on their archive pages. The summary numbers for those runs remain
-> published above, marked as archived.
+> The result package for the June 2026 archived run was **withdrawn on 2026-09-11**; its summary
+> number remains published above, marked as archived.
 
 ---
 

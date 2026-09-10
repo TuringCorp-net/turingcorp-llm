@@ -51,16 +51,14 @@ the same draft.
 | Consulting MBA | 10 | 84.5% | 10/10 |
 | Finance MBA | 10 | 83.8% | 9/10 |
 
-### Archived benchmarks (LiveBench 2026-01-08 · IFEval)
+### Archived benchmarks (IFEval)
 
 | Benchmark | Overall | Notes |
 |------|:--:|------|
-| LiveBench (v1, release 2026-01-08) | **80.5** | 682/682 questions; see the aggregation caveat on the archive page |
 | IFEval (lm-eval) | inst_strict **93.5%** | 541 prompts, programmatic scoring |
 
-> These June 2026 results are retained for traceability and are no longer published on the website.
-> Details: [benchmarks/archive/livebench.md](../benchmarks/archive/livebench.md) ·
-> [benchmarks/archive/ifeval.md](../benchmarks/archive/ifeval.md)
+> Published in June 2026 and retained for traceability; no longer published on the website.
+> Details: [benchmarks/archive/ifeval.md](../benchmarks/archive/ifeval.md)
 
 ## Observed strengths
 
