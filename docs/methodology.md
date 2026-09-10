@@ -1,15 +1,52 @@
 # Methodology
 
-TuringCorp models use a proprietary multi-model orchestration system. Each inference request is processed through a collaborative pipeline designed to produce higher-quality outputs than single-model approaches.
+TuringCorp models run on a proprietary multi-model orchestration system: a single inference request
+is processed through a collaborative pipeline rather than a single forward pass.
 
-## Performance Characteristics
+## Delivery contract
 
-- **Output quality** benefits from the collaborative architecture
-- **Latency** is higher than single-model inference due to the multi-step process
-- **Quality scales** with model tier (Junior → Senior → Principal)
+**Team** returns *content + reason*: the answer body together with the reasoning the model states
+for its own conclusion. This is part of the product, not a debugging artefact, and it is what gets
+scored — ProfBench evaluates every response criterion by criterion, derivations and intermediate
+results included, so an answer that shows its work is scored on the work itself.
 
-## Evaluation
+**Decider** returns a pick plus a **confidence value** with every judgment. Confidence is a
+review-routing signal — adopt the high-confidence calls, review the rest, route the near-ties to a
+human — not a substitute for the decision-maker.
 
-All benchmark results are produced using the same API endpoint available to customers, with standard open-source evaluation frameworks (LiveBench, lm-eval) without modification.
+## Evaluation principles
 
-To reproduce: obtain API access and use the LiveBench evaluation framework with endpoint `https://api.turingcorp.net/v1`.
+1. **Official protocols, unmodified.** Each benchmark is run with its own official prompt,
+   judging procedure and aggregation, whichever way the numbers fall out.
+2. **Self-run, disclosed as such.** We are not a third-party leaderboard. Reference models are
+   measured on the same judged set with the same pipeline, so model-vs-model columns are directly
+   comparable; rows produced by an official judging pipeline are labelled as context only.
+3. **Disclose coverage and exclusions.** Failures are excluded from scoring and reported
+   (rerun-excluded after repeated platform failures) — never imputed, never silently dropped.
+4. **Calibrate the judge.** Where our pipeline scores the answers, its agreement with the official
+   labels is measured and published (for ProfBench: 74.0% agreement, F1 0.761, mean difference
+   +2.3 points on the official o3 draft).
+5. **Pre-empt the obvious artefacts.** A preference must survive a control before it is published:
+   the ProfBench head-to-head was re-run with the two candidate answers exchanged between option A
+   and option B on a sample of tasks (10/10 kept the same draft), and judgments come from a panel
+   of independent models rather than one model grading its own output.
+6. **Raw data for verification.** Result packages ship the underlying model outputs and
+   per-criterion judgments, so the published scores can be re-derived independently.
+
+## Reproducing
+
+The API endpoint is the same one customers use:
+
+```
+https://api.turingcorp.net/v1
+```
+
+Obtain preview access (see [api.md](api.md)), then run the benchmark with its own official
+framework and point it at this endpoint. Benchmark-specific protocol notes — dataset, judging
+procedure, coverage, exclusions — are in [`benchmarks/`](../benchmarks/).
+
+## Notes
+
+- Latency is higher than single-model inference: several reasoning paths run and are cross-examined
+  before an answer is delivered.
+- Tier describes the depth of the pipeline (Junior → Senior → Principal), not a different task.
