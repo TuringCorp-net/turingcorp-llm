@@ -5,7 +5,7 @@ Benchmark results, raw data, methods and model cards for TuringCorp language mod
 👉 **API**: `https://api.turingcorp.net/v1` (OpenAI-compatible) · Small-scale preview. [Apply for a license key →](docs/api.md#preview-license-key)
 📊 **Results as text**: [api.turingcorp.net/benchmarks](https://api.turingcorp.net/benchmarks) — script-free, table-complete
 🧾 **Data (JSON)**: [api.turingcorp.net/benchmarks/latest.json](https://api.turingcorp.net/benchmarks/latest.json)
-🤖 **For AI agents**: [api.turingcorp.net/llms.txt](https://api.turingcorp.net/llms.txt)
+🤖 **For AI agents**: [llms.txt](https://api.turingcorp.net/llms.txt) · [agent brief (Markdown)](https://api.turingcorp.net/index.md) · [OpenAPI 3.1](https://api.turingcorp.net/openapi.json) — requesting `Accept: text/markdown` from any page returns the Markdown version
 📧 **Contact**: `iAsk@turingcorp.net`
 
 > This repository is the **detailed** publication channel: it carries more than the website — full
