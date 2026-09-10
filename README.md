@@ -83,9 +83,9 @@ judging pipeline.
 | Finance MBA | 10 | 54.6 | 48.2 | **57.5** |
 | Physics PhD | 8 | **49.6** | 37.8 | 35.2 |
 
-> 38 of 40 tasks scored: two tasks were excluded when a member model failed to produce an answer
-> during the run — disclosed rather than imputed. **All three columns are reported on those same
-> 38 tasks**, the set every model completed. Team leads the official o3 draft by **+7.7 points** and
+> 38 of 40 tasks scored: two tasks were excluded because no answer was produced for them during the
+> run — disclosed rather than imputed. **All three columns are reported on those same 38 tasks**,
+> the set every model completed. Team leads the official o3 draft by **+7.7 points** and
 > the direct baseline by **+4.9 points**, and the decision kernel picked the team draft **36 : 1**
 > head-to-head without ever seeing the rubric.
 > Full details → [benchmarks/profbench.md](benchmarks/profbench.md)
@@ -105,10 +105,10 @@ Raw model outputs for independent verification:
 | Package | Release | Contents |
 |------|------|------|
 | [turingcorp-team-junior-v1.1_profbench-20260910.zip](result-package/turingcorp-team-junior-v1.1_profbench-20260910.zip) | ProfBench 2026-09-10 | Team answers (content + reason), per-criterion judge ratings, decision-kernel picks, position-swap audit |
-| [turingcorp-team-junior-v1_livebench-20260108.zip](result-package/turingcorp-team-junior-v1_livebench-20260108.zip) | LiveBench 2026-01-08 *(archived)* | Junior answers |
-| [turingcorp-team-senior-v1_livebench-20260108.zip](result-package/turingcorp-team-senior-v1_livebench-20260108.zip) | LiveBench 2026-01-08 *(archived)* | Senior answers |
-| [turingcorp-team-junior-v1_ifeval.zip](result-package/turingcorp-team-junior-v1_ifeval.zip) | IFEval *(archived)* | Junior outputs |
-| [turingcorp-team-senior-v1_ifeval.zip](result-package/turingcorp-team-senior-v1_ifeval.zip) | IFEval *(archived)* | Senior outputs |
+
+> Packages for the June 2026 LiveBench and IFEval runs were **withdrawn on 2026-09-11**, together
+> with the raw-data links on their archive pages. The summary numbers for those runs remain
+> published above, marked as archived.
 
 ---
 
@@ -129,7 +129,7 @@ turingcorp-llm/
 │   └── archive/       ← Retired benchmarks, kept for traceability
 ├── model-cards/       ← Model descriptions
 ├── docs/              ← API docs, methodology
-└── result-package/    ← Raw results for independent verification
+└── result-package/    ← Raw results for independent verification (current suite)
 ```
 
 ---

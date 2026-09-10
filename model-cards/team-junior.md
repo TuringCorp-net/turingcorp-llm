@@ -5,9 +5,9 @@ Status: **Preview**
 
 ## What it is
 
-Collaborative multi-path analysis for everyday tasks: several independent reasoning paths are
-produced and then cross-examined, and the final answer is delivered as **content + reason** — the
-answer body together with the reasoning the model states for its conclusion.
+Collaborative multi-path analysis for everyday tasks: independent reasoning paths cross-examine
+each other, and the final answer is delivered as **content + reason** — the answer body together
+with the reasoning the model states for its conclusion.
 
 ## Benchmark Results
 
@@ -30,9 +30,9 @@ three columns below are directly comparable.
 | Finance MBA | 10 | 54.6 | 48.2 | **57.5** |
 | Physics PhD | 8 | **49.6** | 37.8 | 35.2 |
 
-> 38 of 40 tasks scored. Two tasks were excluded when a member model failed to produce an answer
-> during the run — disclosed rather than imputed. **All three columns are reported on those same
-> 38 tasks**, the set every model completed.
+> 38 of 40 tasks scored. Two tasks were excluded because no answer was produced for them during the
+> run — disclosed rather than imputed. **All three columns are reported on those same 38 tasks**,
+> the set every model completed.
 > Our judging pipeline reproduces the official per-criterion labels on the o3 draft with 74.0%
 > agreement (F1 0.761, mean difference +2.4 points).
 
@@ -68,7 +68,7 @@ the same draft.
   official reference draft on the same tasks.
 - Strongest margin in the qualitative domains (Chemistry, Consulting) while remaining competitive
   in Physics and Finance.
-- The decision kernel reached the same conclusion head-to-head **without seeing the rubric**, which
-  makes the preference independent evidence rather than a restatement of the score.
+- Every judgment ships with a calibrated confidence value; the per-domain figures are in
+  [benchmarks/profbench.md](../benchmarks/profbench.md).
 
 Full details: [benchmarks/profbench.md](../benchmarks/profbench.md)

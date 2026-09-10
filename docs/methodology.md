@@ -25,13 +25,14 @@ human — not a substitute for the decision-maker.
    (rerun-excluded after repeated platform failures) — never imputed, never silently dropped.
 4. **Calibrate the judge.** Where our pipeline scores the answers, its agreement with the official
    labels is measured and published (for ProfBench: 74.0% agreement, F1 0.761, mean difference
-   +2.3 points on the official o3 draft).
+   +2.4 points on the official o3 draft).
 5. **Pre-empt the obvious artefacts.** A preference must survive a control before it is published:
    the ProfBench head-to-head was re-run with the two candidate answers exchanged between option A
    and option B on a sample of tasks (10/10 kept the same draft), and judgments come from a panel
    of independent models rather than one model grading its own output.
-6. **Raw data for verification.** Result packages ship the underlying model outputs and
-   per-criterion judgments, so the published scores can be re-derived independently.
+6. **Raw data for verification.** Where a result package is published, it ships the underlying
+   model outputs and per-criterion judgments so the scores can be re-derived independently. Packages
+   are published for the current suite; retired benchmarks keep their summary numbers only.
 
 ## Reproducing
 
@@ -47,6 +48,5 @@ procedure, coverage, exclusions — are in [`benchmarks/`](../benchmarks/).
 
 ## Notes
 
-- Latency is higher than single-model inference: several reasoning paths run and are cross-examined
-  before an answer is delivered.
-- Tier describes the depth of the pipeline (Junior → Senior → Principal), not a different task.
+- Latency is higher than a single-model call.
+- Tier describes depth (Junior → Senior → Principal), not a different task.

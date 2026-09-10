@@ -12,8 +12,8 @@
 - Team delivery is **content + reason** — the answer body together with the reasoning the model
   states for it. Rubric criteria include derivations and intermediate results, so an answer that
   shows its work is scored on the work itself.
-- **Coverage**: 38 of 40 tasks scored. Two tasks were excluded when a member model failed to
-  produce an answer during the run — disclosed rather than imputed.
+- **Coverage**: 38 of 40 tasks scored. Two tasks were excluded because no answer was produced for
+  them during the run — disclosed rather than imputed.
 - **Comparison set**: all three columns are reported on those same 38 tasks — the set every model
   completed. The baseline and the official draft were also evaluated on the two excluded tasks;
   those are left out of the comparison for **all three** columns rather than only for Team.
