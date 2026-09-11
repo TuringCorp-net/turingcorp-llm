@@ -12,8 +12,11 @@ results included, so an answer that shows its work is scored on the work itself.
 
 **Decider** returns a pick plus a **confidence value** with every judgment. The value describes how
 far apart the two candidates are in its judgment — a high value means one of them is clearly
-stronger, a low value means the two are close in quality and each has its own strengths. It is a
-reading of how decisive the comparison was, not a verdict on either candidate taken on its own.
+stronger, a low value means the two are close in quality and each has its own strengths. That makes
+it directly usable: a high value means the pick can be acted on directly, a low value means either
+choice is defensible. It is a reading of how decisive the comparison was, not a verdict on either
+candidate taken on its own. Thresholds are ours to publish, yours to set — see the per-benchmark
+accuracy tables in [`benchmarks/`](../benchmarks/).
 
 ## Evaluation principles
 

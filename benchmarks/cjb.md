@@ -48,19 +48,19 @@ failure.
 ## Confidence calibration
 
 Confidence is emitted with every judgment and calibrated against outcomes on this benchmark. It
-describes **how far apart the two candidates are** in our judgment. This benchmark deliberately
-contains near-tie splits, so a low value here means the two candidates are close in quality — not
-that the comparison itself was unreliable.
+describes **how far apart the two candidates are**, and the accuracy column shows what that
+delivered here. This benchmark deliberately contains near-tie splits, so the accuracies run lower by
+design — the bands describe the comparison, not a promise about either answer.
 
-| Confidence tier | judgments | share | accuracy % | what the value means |
-|------|:--:|:--:|:--:|------|
-| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger |
-| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger |
-| 70–80% | 1,184 | 29.7% | 63.6 | closer call |
-| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths |
+| Confidence band | judgments | share | observed accuracy | what the value means | suggested use |
+|------|:--:|:--:|:--:|------|------|
+| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger | act on the pick directly |
+| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger | act on the pick directly |
+| 70–80% | 1,184 | 29.7% | 63.6 | closer call | act on the pick, expecting a narrow margin |
+| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths | either option is defensible — decide on grounds outside the answers |
 
-A near-tie is never presented as a confident call: every judgment ships with the value that says
-how close the two candidates were.
+A high value means the comparison was decisive and the pick can be acted on directly; a low value
+means the two are close in quality, where either choice is defensible.
 
 ---
 

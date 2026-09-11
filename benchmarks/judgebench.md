@@ -37,18 +37,19 @@ are effectively level overall.
 ## Confidence calibration
 
 Confidence is emitted with every judgment and calibrated against outcomes on this benchmark. It
-describes **how far apart the two candidates are** in our judgment: a high value means one of them
-is clearly stronger, a low value means the two are close in quality and each has its own strengths.
+describes **how far apart the two candidates are** — and the accuracy column shows what that
+delivered here. Set your own threshold from the accuracy column; for high-stakes or irreversible
+decisions, apply your own review policy.
 
-| Confidence tier | judgments | share | accuracy % | what the value means |
-|------|:--:|:--:|:--:|------|
-| ≥ 90% | 283 | 45.6% | 99.6 | one candidate clearly stronger |
-| 80–90% | 184 | 29.7% | 94.0 | one candidate clearly stronger |
-| 70–80% | 82 | 13.2% | 84.1 | closer call |
-| < 70% | 65 | 10.5% | 67.7 | near-tie: the two candidates are close in quality, each with its own strengths |
+| Confidence band | judgments | share | observed accuracy | what the value means | suggested use |
+|------|:--:|:--:|:--:|------|------|
+| ≥ 90% | 283 | 45.6% | 99.6 | one candidate clearly stronger | act on the pick directly |
+| 80–90% | 184 | 29.7% | 94.0 | one candidate clearly stronger | act on the pick directly |
+| 70–80% | 82 | 13.2% | 84.1 | closer call | act on the pick, expecting a narrow margin |
+| < 70% | 65 | 10.5% | 67.7 | near-tie: the two candidates are close in quality, each with its own strengths | either option is defensible — decide on grounds outside the answers |
 
-Accuracy tracks the value on this benchmark, so it is a reading of how decisive the comparison
-was — not a verdict on either candidate taken on its own.
+A high value means the comparison was decisive and the pick can be acted on directly; a low value
+means the two are close in quality, where either choice is defensible.
 
 ---
 
