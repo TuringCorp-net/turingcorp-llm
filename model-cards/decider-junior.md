@@ -39,7 +39,7 @@ threshold from the accuracy column:
 | ≥ 90% | 283 | 45.6% | 99.6 | one candidate clearly stronger | Act on it |
 | 80–90% | 184 | 29.7% | 94.0 | one candidate stronger | Go with it |
 | 70–80% | 82 | 13.2% | 84.1 | closer call | Act on it after a quick look |
-| < 70% | 65 | 10.5% | 67.7 | near-tie: the two candidates are close in quality, each with its own strengths | Either choice is fine |
+| < 70% | 65 | 10.5% | 67.7 | near-tie — evenly matched | Either choice is fine |
 
 ### ContextualJudgeBench (2026-09-09)
 
@@ -59,7 +59,7 @@ pick in both presentation orders; the random floor is 25%.
 | ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger | Act on it |
 | 80–90% | 1,486 | 37.3% | 76.4 | one candidate stronger | Go with it |
 | 70–80% | 1,184 | 29.7% | 63.6 | closer call | Act on it after a quick look |
-| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths | Either choice is fine |
+| < 70% | 529 | 13.3% | 55.4 | near-tie — evenly matched | Either choice is fine |
 
 ## Observed strengths
 
