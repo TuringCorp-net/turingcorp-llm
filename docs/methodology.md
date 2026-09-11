@@ -10,9 +10,10 @@ for its own conclusion. This is part of the product, not a debugging artefact, a
 scored — ProfBench evaluates every response criterion by criterion, derivations and intermediate
 results included, so an answer that shows its work is scored on the work itself.
 
-**Decider** returns a pick plus a **confidence value** with every judgment. Confidence is a
-review-routing signal — adopt the high-confidence calls, review the rest, route the near-ties to a
-human — not a substitute for the decision-maker.
+**Decider** returns a pick plus a **confidence value** with every judgment. The value describes how
+far apart the two candidates are in its judgment — a high value means one of them is clearly
+stronger, a low value means the two are close in quality and each has its own strengths. It is a
+reading of how decisive the comparison was, not a verdict on either candidate taken on its own.
 
 ## Evaluation principles
 

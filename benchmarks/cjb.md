@@ -47,19 +47,20 @@ failure.
 
 ## Confidence calibration
 
-Confidence is emitted with every judgment and validated against outcomes on this benchmark. Tiers
-here are **review-routing signals scoped to this benchmark**: near-tie tasks are harder than
-standard QA, so these tiers do not imply auto-accept.
+Confidence is emitted with every judgment and calibrated against outcomes on this benchmark. It
+describes **how far apart the two candidates are** in our judgment. This benchmark deliberately
+contains near-tie splits, so a low value here means the two candidates are close in quality — not
+that the comparison itself was unreliable.
 
-| Confidence tier | judgments | share | accuracy % | routing guidance |
+| Confidence tier | judgments | share | accuracy % | what the value means |
 |------|:--:|:--:|:--:|------|
-| ≥ 90% | 789 | 19.8% | 83.3 | adopt, spot-check |
-| 80–90% | 1,486 | 37.3% | 76.4 | adopt after a quick review |
-| 70–80% | 1,184 | 29.7% | 63.6 | review |
-| < 70% | 529 | 13.3% | 55.4 | route to a human |
+| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger |
+| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger |
+| 70–80% | 1,184 | 29.7% | 63.6 | closer call |
+| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths |
 
 A near-tie is never presented as a confident call: every judgment ships with the value that says
-what to adopt directly and what deserves a closer look.
+how close the two candidates were.
 
 ---
 

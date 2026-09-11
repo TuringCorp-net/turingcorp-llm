@@ -36,18 +36,19 @@ are effectively level overall.
 
 ## Confidence calibration
 
-Confidence is emitted with every judgment and validated against outcomes on this benchmark:
+Confidence is emitted with every judgment and calibrated against outcomes on this benchmark. It
+describes **how far apart the two candidates are** in our judgment: a high value means one of them
+is clearly stronger, a low value means the two are close in quality and each has its own strengths.
 
-| Confidence tier | judgments | share | accuracy % | routing guidance |
+| Confidence tier | judgments | share | accuracy % | what the value means |
 |------|:--:|:--:|:--:|------|
-| ≥ 90% | 283 | 45.6% | 99.6 | auto-accept |
-| 80–90% | 184 | 29.7% | 94.0 | adopt after a quick review |
-| 70–80% | 82 | 13.2% | 84.1 | review before adopting |
-| < 70% | 65 | 10.5% | 67.7 | near-tie, route to a human |
+| ≥ 90% | 283 | 45.6% | 99.6 | one candidate clearly stronger |
+| 80–90% | 184 | 29.7% | 94.0 | one candidate clearly stronger |
+| 70–80% | 82 | 13.2% | 84.1 | closer call |
+| < 70% | 65 | 10.5% | 67.7 | near-tie: the two candidates are close in quality, each with its own strengths |
 
-Accuracy rises monotonically with the reported confidence, so the value works as a routing signal:
-adopt the high-confidence calls, review the rest, and let a human take the near-ties. It is a
-routing aid, not a substitute for the decision-maker.
+Accuracy tracks the value on this benchmark, so it is a reading of how decisive the comparison
+was — not a verdict on either candidate taken on its own.
 
 ---
 

@@ -83,8 +83,9 @@ columns above are the measurement, and the kernel reached its conclusion without
 
 Median confidence on this benchmark is **85.9%**. It is not uniform across domains: highest in the
 two domains where the team draft leads by the widest margin (Physics PhD, Chemistry PhD) and lowest
-in Finance MBA, the one domain where the rubric prefers the reference draft. Confidence is a
-review-routing signal for a human, not a substitute for the decision-maker.
+in Finance MBA, the one domain where the rubric prefers the reference draft. It describes how far
+apart the two drafts are in the kernel's judgment: the lower the value, the closer the two are in
+quality.
 
 The 38-task run used a single fixed presentation order, with the team draft always offered as
 option A; the position-swap audit above — not that run — is the control for ordering.

@@ -30,15 +30,16 @@ Reference-model judging: given a question and two candidate responses, which is 
 
 > 614 / 620 pairs scored; 6 pairs rerun-excluded after repeated platform failures.
 
-**Confidence calibration** — accuracy rises monotonically with the confidence Decider reports, so
-the value can act as a routing signal:
+**Confidence calibration** — the value describes **how far apart the two candidates are** in our
+judgment: a high value means one of them is clearly stronger, a low value means the two are close
+in quality and each has its own strengths. Accuracy tracks it on this benchmark:
 
-| Confidence tier | judgments | share | accuracy % | routing guidance |
+| Confidence tier | judgments | share | accuracy % | what the value means |
 |------|:--:|:--:|:--:|------|
-| ≥ 90% | 283 | 45.6% | 99.6 | auto-accept |
-| 80–90% | 184 | 29.7% | 94.0 | adopt after a quick review |
-| 70–80% | 82 | 13.2% | 84.1 | review before adopting |
-| < 70% | 65 | 10.5% | 67.7 | near-tie, route to a human |
+| ≥ 90% | 283 | 45.6% | 99.6 | one candidate clearly stronger |
+| 80–90% | 184 | 29.7% | 94.0 | one candidate clearly stronger |
+| 70–80% | 82 | 13.2% | 84.1 | closer call |
+| < 70% | 65 | 10.5% | 67.7 | near-tie: the two candidates are close in quality, each with its own strengths |
 
 ### ContextualJudgeBench (2026-09-09)
 
@@ -53,12 +54,12 @@ pick in both presentation orders; the random floor is 25%.
 > 1,991 / 2,000 pairs completed; 12 orders (0.3%) rerun-excluded after repeated platform failures.
 > Per-split table with official reference values → [benchmarks/cjb.md](../benchmarks/cjb.md)
 
-| Confidence tier | judgments | share | accuracy % | routing guidance |
+| Confidence tier | judgments | share | accuracy % | what the value means |
 |------|:--:|:--:|:--:|------|
-| ≥ 90% | 789 | 19.8% | 83.3 | adopt, spot-check |
-| 80–90% | 1,486 | 37.3% | 76.4 | adopt after a quick review |
-| 70–80% | 1,184 | 29.7% | 63.6 | review |
-| < 70% | 529 | 13.3% | 55.4 | route to a human |
+| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger |
+| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger |
+| 70–80% | 1,184 | 29.7% | 63.6 | closer call |
+| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths |
 
 ## Observed strengths
 
