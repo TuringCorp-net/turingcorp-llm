@@ -36,10 +36,10 @@ threshold from the accuracy column:
 
 | Confidence band | judgments | share | observed accuracy | what the value means | suggested use |
 |------|:--:|:--:|:--:|------|------|
-| ≥ 90% | 283 | 45.6% | 99.6 | one candidate clearly stronger | act on the pick directly |
-| 80–90% | 184 | 29.7% | 94.0 | one candidate clearly stronger | act on the pick directly |
-| 70–80% | 82 | 13.2% | 84.1 | closer call | act on the pick, expecting a narrow margin |
-| < 70% | 65 | 10.5% | 67.7 | near-tie: the two candidates are close in quality, each with its own strengths | either option is defensible — decide on grounds outside the answers |
+| ≥ 90% | 283 | 45.6% | 99.6 | one candidate clearly stronger | Act on it |
+| 80–90% | 184 | 29.7% | 94.0 | one candidate clearly stronger | Act on it |
+| 70–80% | 82 | 13.2% | 84.1 | closer call | Act on it after a quick look |
+| < 70% | 65 | 10.5% | 67.7 | near-tie: the two candidates are close in quality, each with its own strengths | Either choice is fine |
 
 ### ContextualJudgeBench (2026-09-09)
 
@@ -56,10 +56,10 @@ pick in both presentation orders; the random floor is 25%.
 
 | Confidence band | judgments | share | observed accuracy | what the value means | suggested use |
 |------|:--:|:--:|:--:|------|------|
-| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger | act on the pick directly |
-| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger | act on the pick directly |
-| 70–80% | 1,184 | 29.7% | 63.6 | closer call | act on the pick, expecting a narrow margin |
-| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths | either option is defensible — decide on grounds outside the answers |
+| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger | Act on it |
+| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger | Act on it |
+| 70–80% | 1,184 | 29.7% | 63.6 | closer call | Act on it after a quick look |
+| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths | Either choice is fine |
 
 ## Observed strengths
 

@@ -54,10 +54,10 @@ design — the bands describe the comparison, not a promise about either answer.
 
 | Confidence band | judgments | share | observed accuracy | what the value means | suggested use |
 |------|:--:|:--:|:--:|------|------|
-| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger | act on the pick directly |
-| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger | act on the pick directly |
-| 70–80% | 1,184 | 29.7% | 63.6 | closer call | act on the pick, expecting a narrow margin |
-| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths | either option is defensible — decide on grounds outside the answers |
+| ≥ 90% | 789 | 19.8% | 83.3 | one candidate clearly stronger | Act on it |
+| 80–90% | 1,486 | 37.3% | 76.4 | one candidate clearly stronger | Act on it |
+| 70–80% | 1,184 | 29.7% | 63.6 | closer call | Act on it after a quick look |
+| < 70% | 529 | 13.3% | 55.4 | near-tie: the two candidates are close in quality, each with its own strengths | Either choice is fine |
 
 A high value means the comparison was decisive and the pick can be acted on directly; a low value
 means the two are close in quality, where either choice is defensible.
