@@ -19,11 +19,11 @@ Reference-model judging: given a question and two candidate responses, which is 
 | Model | Accuracy % |
 |------|:--:|
 | **Decider Junior** | **92.5** |
-| DeepSeek V4 Flash (direct) | 92.7 |
+| DeepSeek V4 Flash (direct) | 92.2 |
 
 | Segment | pairs | Decider | DeepSeek V4 Flash (direct) |
 |------|:--:|:--:|:--:|
-| Knowledge (MMLU-Pro) | 303 | 88.8 | 88.8 |
+| Knowledge (MMLU-Pro) | 303 | 88.8 | 87.8 |
 | Reasoning (LiveBench) | 149 | **98.0** | 96.6 |
 | Math (LiveBench) | 90 | 92.2 | **95.6** |
 | Code (LiveCodeBench) | 72 | 97.2 | 97.2 |

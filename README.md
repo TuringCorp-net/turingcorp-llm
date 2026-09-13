@@ -47,7 +47,7 @@ Reference-model judging: given a question and two candidate responses, which is 
 | Model | Accuracy % |
 |------|:--:|
 | **Decider Junior** | **92.5** |
-| DeepSeek V4 Flash (direct) | 92.7 |
+| DeepSeek V4 Flash (direct) | 92.2 |
 
 > 614 / 620 pairs scored; 6 pairs rerun-excluded after repeated platform failures.
 > Full details → [benchmarks/judgebench.md](benchmarks/judgebench.md)
