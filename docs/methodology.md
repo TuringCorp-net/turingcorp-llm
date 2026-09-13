@@ -32,7 +32,8 @@ accuracy tables in [`benchmarks/`](../benchmarks/).
    +2.4 points on the official o3 draft).
 5. **Pre-empt the obvious artefacts.** A preference must survive a control before it is published:
    the ProfBench head-to-head was re-run with the two candidate answers exchanged between option A
-   and option B on a sample of tasks (10/10 kept the same draft), and judgments come from a panel
+   and option B on every task where a pick had been made (36 of 37 kept the same draft; the single
+   change fell on a task the kernel had itself flagged as a near-tie), and judgments come from a panel
    of independent models rather than one model grading its own output.
 6. **Raw data for verification.** Where a result package is published, it ships the underlying
    model outputs and per-criterion judgments so the scores can be re-derived independently. Packages

@@ -38,9 +38,11 @@ three columns below are directly comparable.
 
 **Head-to-head by our own decision kernel.** Asked to choose between the team draft and the
 official o3 draft on the same 38 tasks — shown the question and the two drafts, with no rubric and
-no scores — the kernel selected the team draft **36 : 1** (one unresolved). On a sample of 10 tasks
-the comparison was re-run with the two drafts exchanged between option A and option B: all 10 kept
-the same draft.
+no scores — the kernel selected the team draft **36 : 1** (one unresolved). On all 37 tasks where
+it had made a pick, the comparison was re-run with the two drafts exchanged between option A and
+option B: **36 kept the same draft**. The single change came on a task the kernel had already
+flagged as a near-tie (23% confidence); **all 23 picks made at 80% confidence or above came back
+identical**.
 
 **Confidence reported with every judgment** (median confidence, and kernel picks for the team draft):
 

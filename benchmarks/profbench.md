@@ -63,9 +63,10 @@ It was shown the question and the two drafts and nothing else — **no rubric, n
 
 Two checks keep this preference from being an artefact:
 
-- **Position swap.** On a sample of 10 tasks the comparison was re-run with the two drafts
-  exchanged between option A and option B. All 10 kept the same draft, so the pick does not come
-  from where an answer happened to sit.
+- **Position swap.** On all 37 tasks where the kernel had made a pick, the comparison was re-run
+  with the two drafts exchanged between option A and option B. 36 kept the same draft. The single
+  change came on a task the kernel had already flagged as a near-tie (23% confidence); all 23 picks
+  made at 80% confidence or above came back identical, so position is not what decides the pick.
 - **No self-grading.** The judgment comes from a panel of independent models rather than one model
   scoring its own output, which removes the self-preference bias of a single-judge setup.
 
