@@ -6,6 +6,7 @@ Benchmark results, raw data, methods and model cards for TuringCorp language mod
 📊 **Results as text**: [api.turingcorp.net/benchmarks](https://api.turingcorp.net/benchmarks) — script-free, table-complete
 🧾 **Data (JSON)**: [api.turingcorp.net/benchmarks/latest.json](https://api.turingcorp.net/benchmarks/latest.json)
 🤖 **For AI agents**: [llms.txt](https://api.turingcorp.net/llms.txt) · [agent brief (Markdown)](https://api.turingcorp.net/index.md) · [OpenAPI 3.1](https://api.turingcorp.net/openapi.json) — requesting `Accept: text/markdown` from any page returns the Markdown version
+📄 **Method paper**: [Cross-Model Confidence in the MCL Framework: Calibrated Uncertainty for Selective Judgment](https://doi.org/10.6084/m9.figshare.33684823) — the protocol, the calibration analysis and the negative results behind these numbers
 📧 **Contact**: `iAsk@turingcorp.net`
 
 > This repository is the **detailed** publication channel: it carries more than the website — full
