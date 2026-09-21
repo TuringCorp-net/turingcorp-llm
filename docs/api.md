@@ -64,14 +64,32 @@ print(response.choices[0].message.content)
 
 ---
 
-## Preview License Key
+## Get a key
 
-The API is currently in a small-scale preview phase. Access is by invitation only.
+Access is **self-serve**: create an account and add credit at
+[**Agent Pass**](https://agent-pass.turingcorp.net), then use the API key it issues.
 
-To request a preview license key, email **iAsk@turingcorp.net** with:
+**If you are a person** — sign up on the web:
 
-- **Name** — your name or organization
-- **Company** — your company or affiliation
-- **Use Case** — what you plan to test or evaluate
+1. Sign up with your email and verify it.
+2. Add credit to the account.
+3. Copy the API key and send it as `Authorization: Bearer <key>`.
 
-We review requests promptly and will respond with a key and usage limits.
+**If you are an agent** — the same thing over the API:
+
+```bash
+# 1. start registration — a 6-digit code is emailed to that address
+#    (the response is the same whether or not the address is registered)
+curl -X POST https://agent-pass.turingcorp.net/api/v1/auth/register/start \
+  -H 'content-type: application/json' -d '{"email":"you@example.com"}'
+
+# 2. complete it — the response contains apiKey (shown once)
+curl -X POST https://agent-pass.turingcorp.net/api/v1/auth/register/complete \
+  -H 'content-type: application/json' \
+  -d '{"email":"you@example.com","code":"123456","password":"..."}'
+```
+
+Machine-readable: [llms.txt](https://agent-pass.turingcorp.net/llms.txt) ·
+[OpenAPI](https://agent-pass.turingcorp.net/openapi.json)
+
+Questions: `iAsk@turingcorp.net`

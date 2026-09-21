@@ -2,7 +2,7 @@
 
 Benchmark results, raw data, methods and model cards for TuringCorp language models.
 
-👉 **API**: `https://api.turingcorp.net/v1` (OpenAI-compatible) · Small-scale preview. [Apply for a license key →](docs/api.md#preview-license-key)
+👉 **API**: `https://api.turingcorp.net/v1` (OpenAI-compatible) · Self-serve — [get a key →](docs/api.md#get-a-key)
 📊 **Results as text**: [api.turingcorp.net/benchmarks](https://api.turingcorp.net/benchmarks) — script-free, table-complete
 🧾 **Data (JSON)**: [api.turingcorp.net/benchmarks/latest.json](https://api.turingcorp.net/benchmarks/latest.json)
 🤖 **For AI agents**: [llms.txt](https://api.turingcorp.net/llms.txt) · [agent brief (Markdown)](https://api.turingcorp.net/index.md) · [OpenAPI 3.1](https://api.turingcorp.net/openapi.json) — requesting `Accept: text/markdown` from any page returns the Markdown version
@@ -20,11 +20,11 @@ Benchmark results, raw data, methods and model cards for TuringCorp language mod
 
 | Model ID | Product | Tier | Card | Status |
 |------|------|:--:|------|:--:|
-| `turingcorp/decider-junior-v1` | Decider | Junior | [card](model-cards/decider-junior.md) | Preview |
-| `turingcorp/decider-senior-v1` | Decider | Senior | [card](model-cards/decider-senior.md) | Preview |
-| `turingcorp/team-junior-v1.1` | Team | Junior | [card](model-cards/team-junior.md) | Preview |
-| `turingcorp/team-senior-v1` | Team | Senior | [card](model-cards/team-senior.md) | Preview |
-| `turingcorp/team-principal-v1` | Team | Principal | [card](model-cards/team-principal.md) | Preview |
+| `turingcorp/decider-junior-v1` | Decider | Junior | [card](model-cards/decider-junior.md) | **Available now** |
+| `turingcorp/decider-senior-v1` | Decider | Senior | [card](model-cards/decider-senior.md) | Not yet available |
+| `turingcorp/team-junior-v1.1` | Team | Junior | [card](model-cards/team-junior.md) | Not yet available |
+| `turingcorp/team-senior-v1` | Team | Senior | [card](model-cards/team-senior.md) | Not yet available |
+| `turingcorp/team-principal-v1` | Team | Principal | [card](model-cards/team-principal.md) | Not yet available |
 
 **Decider** is an AI judge: given a task and two candidate answers, it picks the better one and
 reports a calibrated confidence value with every judgment. **Team** is collaborative multi-path
