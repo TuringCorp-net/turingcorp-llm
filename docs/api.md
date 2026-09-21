@@ -73,7 +73,7 @@ Access is **self-serve**: create an account and add credit at
 
 1. Sign up with your email and verify it.
 2. Add credit to the account.
-3. Copy the API key and send it as `Authorization: Bearer <key>`.
+3. Copy the **Agent Pass** it issues and send it as `Authorization: Bearer <pass>`.
 
 **If you are an agent** — the same thing over the API:
 
@@ -83,11 +83,15 @@ Access is **self-serve**: create an account and add credit at
 curl -X POST https://agent-pass.turingcorp.net/api/v1/auth/register/start \
   -H 'content-type: application/json' -d '{"email":"you@example.com"}'
 
-# 2. complete it — the response contains apiKey (shown once)
+# 2. complete it — the response contains apiKey (the Agent Pass, shown once)
 curl -X POST https://agent-pass.turingcorp.net/api/v1/auth/register/complete \
   -H 'content-type: application/json' \
   -d '{"email":"you@example.com","code":"123456","password":"..."}'
 ```
+
+**The credential is an Agent Pass.** It is valid for **7 days** and can be re-rolled at any time
+from <https://agent-pass.turingcorp.net/> — when one is refused as an invalid credential, sign in
+there again and re-roll it. Do not treat it as a permanent key.
 
 Machine-readable: [llms.txt](https://agent-pass.turingcorp.net/llms.txt) ·
 [OpenAPI](https://agent-pass.turingcorp.net/openapi.json)
