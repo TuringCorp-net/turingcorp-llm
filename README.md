@@ -3,6 +3,7 @@
 Benchmark results, raw data, methods and model cards for TuringCorp language models.
 
 👉 **API**: `https://api.turingcorp.net/v1` (OpenAI-compatible) · Self-serve — [get a key →](docs/api.md#get-a-key)
+🛒 **Decider on Poe** (product, pricing, published results): https://api.turingcorp.net/platform/poe
 📊 **Results as text**: [api.turingcorp.net/benchmarks](https://api.turingcorp.net/benchmarks) — script-free, table-complete
 🧾 **Data (JSON)**: [api.turingcorp.net/benchmarks/latest.json](https://api.turingcorp.net/benchmarks/latest.json)
 🤖 **For AI agents**: [llms.txt](https://api.turingcorp.net/llms.txt) · [agent brief (Markdown)](https://api.turingcorp.net/index.md) · [OpenAPI 3.1](https://api.turingcorp.net/openapi.json) — requesting `Accept: text/markdown` from any page returns the Markdown version
