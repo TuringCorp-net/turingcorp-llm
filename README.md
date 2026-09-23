@@ -4,6 +4,7 @@ Benchmark results, raw data, methods and model cards for TuringCorp language mod
 
 👉 **API**: `https://api.turingcorp.net/v1` (OpenAI-compatible) · Self-serve — [get a key →](docs/api.md#get-a-key)
 🛒 **Decider on Poe** (product, pricing, published results): https://api.turingcorp.net/platform/poe
+🔁 **Retrieving a result**: every call returns an `id` — that is the job id. Keep it, and a timeout costs you nothing ([details](docs/api.md#retrieve-a-result))
 📊 **Results as text**: [api.turingcorp.net/benchmarks](https://api.turingcorp.net/benchmarks) — script-free, table-complete
 🧾 **Data (JSON)**: [api.turingcorp.net/benchmarks/latest.json](https://api.turingcorp.net/benchmarks/latest.json)
 🤖 **For AI agents**: [llms.txt](https://api.turingcorp.net/llms.txt) · [agent brief (Markdown)](https://api.turingcorp.net/index.md) · [OpenAPI 3.1](https://api.turingcorp.net/openapi.json) — requesting `Accept: text/markdown` from the site root (`/`), `/index.html` or `/benchmarks` returns the Markdown version
@@ -16,6 +17,25 @@ Benchmark results, raw data, methods and model cards for TuringCorp language mod
 > descriptions or benchmark data is only complete when **both** are updated.
 
 ---
+
+## Retrieving a result
+
+Every call returns an `id`. That id is the job id: record it when you start a call, and a timeout or a dropped
+connection costs you nothing.
+
+```bash
+# The job ids this credential created in the last 7 days
+GET https://api.turingcorp.net/v1/jobs
+Authorization: Bearer <Agent Pass>
+
+# One job's status and, once it succeeded, its stored result
+GET https://api.turingcorp.net/v1/jobs?job_id=<id>
+Authorization: Bearer <Agent Pass>
+```
+
+Retrieval returns the job's status together with the stored result — the same body the call itself would have
+returned. A job that is not yours, or is older than 7 days, is reported as unavailable.
+`GET https://api.turingcorp.net/v1/account` returns `{"account_id":"…"}` for the same credential.
 
 ## Models
 
