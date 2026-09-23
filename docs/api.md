@@ -12,14 +12,36 @@ OpenAI-compatible chat completions API.
 
 | Model ID | Product | Tier | Status |
 |------|------|:--:|:--:|
-| `turingcorp/decider-junior-v1` | Decider | Junior | Preview |
-| `turingcorp/decider-senior-v1` | Decider | Senior | Preview |
-| `turingcorp/team-junior-v1.1` | Team | Junior | Preview |
-| `turingcorp/team-senior-v1` | Team | Senior | Preview |
-| `turingcorp/team-principal-v1` | Team | Principal | Preview |
+| `turingcorp/decider-junior-v1` | Decider | Junior | Available now |
+| `turingcorp/decider-senior-v1` | Decider | Senior | Not yet available |
+| `turingcorp/team-junior-v1.1` | Team | Junior | Not yet available |
+| `turingcorp/team-senior-v1` | Team | Senior | Not yet available |
+| `turingcorp/team-principal-v1` | Team | Principal | Not yet available |
 
 Streaming is not available: requests with `stream: true` return 400. All responses are delivered as
 a single JSON body.
+
+## Retrieve a result
+
+Every call returns an `id`. That id is the job id: record it when you start a call, and a timeout or a dropped
+connection costs you nothing.
+
+```bash
+# List the job ids this credential created in the last 7 days
+GET https://api.turingcorp.net/v1/jobs
+Authorization: Bearer <Agent Pass>
+
+# Fetch one job's status and, once it succeeded, its stored result
+GET https://api.turingcorp.net/v1/jobs?job_id=<id>
+Authorization: Bearer <Agent Pass>
+```
+
+The list looks like `{"object":"list","window_seconds":604800,"data":[{"job_id":"…","product":"…","created_at":1700000000}]}`
+(`created_at` is a Unix timestamp in seconds). Fetching one job returns its status together with the stored result —
+the same body the call itself would have returned. A job that is not yours, or is older than 7 days, is reported as
+unavailable.
+
+`GET https://api.turingcorp.net/v1/account` returns `{"account_id":"…"}` for the same credential.
 
 ## Usage
 

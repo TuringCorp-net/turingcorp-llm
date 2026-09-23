@@ -6,7 +6,7 @@ Benchmark results, raw data, methods and model cards for TuringCorp language mod
 🛒 **Decider on Poe** (product, pricing, published results): https://api.turingcorp.net/platform/poe
 📊 **Results as text**: [api.turingcorp.net/benchmarks](https://api.turingcorp.net/benchmarks) — script-free, table-complete
 🧾 **Data (JSON)**: [api.turingcorp.net/benchmarks/latest.json](https://api.turingcorp.net/benchmarks/latest.json)
-🤖 **For AI agents**: [llms.txt](https://api.turingcorp.net/llms.txt) · [agent brief (Markdown)](https://api.turingcorp.net/index.md) · [OpenAPI 3.1](https://api.turingcorp.net/openapi.json) — requesting `Accept: text/markdown` from any page returns the Markdown version
+🤖 **For AI agents**: [llms.txt](https://api.turingcorp.net/llms.txt) · [agent brief (Markdown)](https://api.turingcorp.net/index.md) · [OpenAPI 3.1](https://api.turingcorp.net/openapi.json) — requesting `Accept: text/markdown` from the site root (`/`), `/index.html` or `/benchmarks` returns the Markdown version
 📄 **Method paper**: [Cross-Model Confidence in the MCL Framework: Calibrated Uncertainty for Selective Judgment](https://doi.org/10.6084/m9.figshare.33684823) — the protocol, the calibration analysis and the negative results behind these numbers
 📧 **Contact**: `iAsk@turingcorp.net`
 
@@ -134,4 +134,4 @@ turingcorp-llm/
 
 ---
 
-*Last updated: 2026-09-11.*
+*Last updated: 2026-09-23.*
